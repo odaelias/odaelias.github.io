@@ -1,0 +1,108 @@
+@media (max-width: 768px) {
+    html {
+        font-size: medium;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blurAnimation {
+    0% {
+        filter: blur(5px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@keyframes spinAnimation {
+    25%, 75% {
+        transform: rotateY(180deg);
+    }
+    0%, 50%, 100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes beatAnimation {
+    0%, 50%, 100% {
+        font-size: 100%;
+        transform: scale(1, 1);
+    }
+
+    30%, 80% {
+        font-size: 90%;
+        transform: scale(0.8, 0.8);
+    }
+}
+
+html {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: crosshair;
+    font-size: large;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+body {
+    background-color: transparent;
+    color: var(--text);
+    animation: fadeInAnimation forwards 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    pointer-events: none;
+}
+
+.artwork {
+    animation: blurAnimation forwards 1.5s;
+}
+
+.profilePicture {
+    animation: spinAnimation 0.7s ease 0s;
+}
+
+.socialmedia {
+    animation: beatAnimation 1.25s ease 1.5s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+table {
+    background-color: transparent;
+}
+
+table tr th {
+    font-weight: normal;
+    font-size: larger;
+}
+
+table tbody tr:hover{
+    background-color: var(--backgroundHover);
+    cursor: pointer;
+}
+
+label[for="darkmode"] {
+    cursor: pointer;
+}

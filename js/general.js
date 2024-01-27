@@ -34,8 +34,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const theme = localStorage.getItem('theme') || (prefersDarkMode ? 'dark' : 'light');
     setTheme(theme);
 
+    const deviceDate = new Date();
+    const deviceHours = deviceDate.getHours();
+
     if (theme === 'dark' && darkModeToggle) {
         darkModeToggle.checked = true;
+    } else if (theme === 'light' && darkModeToggle) {
+        darkModeToggle.checked = false;
+    } else if (deviceHours >= 18 || deviceHours < 6) {
+        setTheme('dark');
+        if (darkModeToggle) {
+            darkModeToggle.checked = true;
+        }
+    } else {
+        setTheme('light');
+        if (darkModeToggle) {
+            darkModeToggle.checked = false;
+        }
     }
 });
 // END DARK MODE

@@ -2,4 +2,5 @@
 
 <br>
 
-> View the website at: <https://odaelias.github.io/portfolio>
+Updating to a dynamic page
+> View the website at: <https://odaelias.github.io>

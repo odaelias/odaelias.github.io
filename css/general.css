@@ -76,7 +76,7 @@ img {
 }
 
 .artwork {
-    animation: blurAnimation forwards 1.5s;
+    animation: blurAnimation forwards 3s;
 }
 
 .profilePicture {

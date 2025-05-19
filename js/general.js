@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
         light: {
             background: 'white',
             text: 'black',
-            backgroundHover: 'rgba(108, 117, 125, 0.2)',
+            backgroundHover: 'rgba(25, 25, 25, 0.2)',
         },
         dark: {
-            background: 'var(--bs-gray-dark)',
+            background: 'rgb(25, 25, 25)',
             text: 'white',
             backgroundHover: 'rgb(255, 255, 255, 0.2)',
         }
